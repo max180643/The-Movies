@@ -10,3 +10,6 @@ _____
 - นาย ณภัทร อารยวัฒนาพงษ์ 61070045
 - นาย
 - นาย
+_____
+# Reference
+[TMDB 5000 Movie Dataset](https://www.kaggle.com/tmdb/tmdb-movie-metadata)
