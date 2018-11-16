@@ -7,6 +7,6 @@ _____
 |[max180643](https://github.com/max180643)|[napatkrub](https://github.com/NAPATKRUP)|[rapeeza1598](https://github.com/rapeeza1598)|[snowneymotex](https://github.com/snowneymotex)|
 #### รายชื่อสมาชิก
 - นาย ชาญวิทย์ เศรษฐวงศ์สิน 61070040
-- นาย
+- นาย ณภัทร อารยวัฒนาพงษ์ 61070045
 - นาย
 - นาย
