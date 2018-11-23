@@ -11,7 +11,7 @@ This Project is a part of "Problem Solving in Information Technology (PSIT)" sub
     - Added team member.
     - Added reference.
  - Added "README" folder.
-    - Add Picture.
+    - Add picture.
  - Added Dataset file.
 ### - napatkrub
  - Edited "README.md". 
@@ -23,8 +23,8 @@ This Project is a part of "Problem Solving in Information Technology (PSIT)" sub
 ### - max180643
  - Added "Dataset_Export.py" file.
  - Added "Data_Export" folder.
-    - Added CSV exported file
- - Edited "README.md"
+    - Added CSV exported file.
+ - Edited "README.md".
     - Edited snowneymotex's picture.
 ### - snowneymotex
  - Edited "README.md".
@@ -32,7 +32,7 @@ This Project is a part of "Problem Solving in Information Technology (PSIT)" sub
 ## 24 Nov 2018
 ### - max180643
  - Edited "README.md".
-    - Added & Edited "Changelog"
+    - Added & Edited "Changelog".
 _____
 # Team Member
 |<img src="README/max180643.jpeg" width="150px" height="150px">|<img src="README/napatkrub.jpeg" width="150px" height="150px">|<img src="README/rapeeza1598.jpeg" width="150px" height="150px">|<img src="README/snowneymotex.jpeg" width="150px" height="150px">|
