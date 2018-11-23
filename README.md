@@ -1,5 +1,38 @@
 # The - Movies
 This Project is a part of "Problem Solving in Information Technology (PSIT)" subject.
+# Changelog
+## 12 Nov 2018
+### - max180643
+ - Created "The - Movies" repository.
+## 16 Nov 2018
+### - max180643
+ - Created & Edited "README.md".
+    - Added title.
+    - Added team member.
+    - Added reference.
+ - Added "README" folder.
+    - Add Picture.
+ - Added Dataset file.
+### - napatkrub
+ - Edited "README.md". 
+    - Added name.
+### - rapeeza1598
+ - Edited "README.md".
+    - Added name.
+## 22 Nov 2018
+### - max180643
+ - Added "Dataset_Export.py" file.
+ - Added "Data_Export" folder.
+    - Added CSV exported file
+ - Edited "README.md"
+    - Edited snowneymotex's picture.
+### - snowneymotex
+ - Edited "README.md".
+    - Added name.
+## 24 Nov 2018
+### - max180643
+ - Edited "README.md".
+    - Added & Edited "Changelog"
 _____
 # Team Member
 |<img src="README/max180643.jpeg" width="150px" height="150px">|<img src="README/napatkrub.jpeg" width="150px" height="150px">|<img src="README/rapeeza1598.jpeg" width="150px" height="150px">|<img src="README/snowneymotex.jpeg" width="150px" height="150px">|
