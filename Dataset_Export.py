@@ -15,6 +15,7 @@ def data_load():
     # load dataset
     dataset = pd.read_csv("Dataset/tmdb_5000_movies.csv")
 
+    # convert to list
     title = dataset["title"].tolist()
     rate = dataset["vote_average"].tolist()
     budget = dataset["budget"].tolist()
