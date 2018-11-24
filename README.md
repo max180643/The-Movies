@@ -36,6 +36,8 @@ This Project is a part of "Problem Solving in Information Technology (PSIT)" sub
 ## 25 Nov 2018
 ### - max180643
  - Edited "Dataset_Export.py".
+ - Added "Total_of_Movies_in_2000 - 2016_Dataset.py".
+ - Added "Graph_Export" Folder.
  - Edited "README.md".
     - Edited "Changelog".
 _____
