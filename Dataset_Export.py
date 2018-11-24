@@ -42,6 +42,9 @@ def data_load():
     # end display
     print("[status] Exported Dataset Successful!")
 
+    # Used time
+    print("[status] Used time : %s seconds" % (time.time() - start_time))
+
 def export_file(data, year):
     """ Export CSV File Sort By Year """
     file_name = "Data_Export/" + str(year) + ".csv"
@@ -50,6 +53,3 @@ def export_file(data, year):
         file_.writerows(data)
 
 data_load()
-
-# Used time
-print("[status] Used time : %s seconds" % (time.time() - start_time))
