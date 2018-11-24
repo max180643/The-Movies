@@ -3,7 +3,6 @@ import csv
 import pandas as pd
 import time
 start_time = time.time()
-dataset = pd.read_csv("Dataset/tmdb_5000_movies.csv")
 
 #banner
 print("[Dataset Export v2.0]")
@@ -14,6 +13,8 @@ def data_load():
     print("[status] Export Dataset Starting!")
 
     # load dataset
+    dataset = pd.read_csv("Dataset/tmdb_5000_movies.csv")
+
     title = dataset["title"].tolist()
     rate = dataset["vote_average"].tolist()
     budget = dataset["budget"].tolist()
