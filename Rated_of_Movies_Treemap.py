@@ -4,10 +4,10 @@ import time
 start_time = time.time()
 
 #Banner
-print("|>>> Total Rates of Movies in year 2000-2016 Dataset <<<|")
+print("|>>> Rated of Movies in year 2000-2016 Dataset <<<|")
 
 def rate_movies():
-    """ Create treemap_graph of total of movies in year 2000-2016 and Load Dataset title and rate"""
+    """ Create Rated of Movies treemap_graph of movies in year 2000-2016 and Load Dataset title and rate"""
     for year in range(2000, 2017):
         print(">> Year : %i" % year)
 
