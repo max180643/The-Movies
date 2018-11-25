@@ -1,3 +1,6 @@
+"""
+The-Movies : Average_Rated_of_Movies
+"""
 import pandas as pd
 import pygal
 import time
@@ -10,8 +13,6 @@ def average_rates():
     """ Create Rated of Movies average_graph of movies in year 2000-2016 and Load Dataset rate"""
     graph = pygal.SolidGauge(inner_radius=0.70)
     graph.title = "Average Rated of Movies in year 2000-2016"
-    percent_formatter = lambda x: '{:.10g}%'.format(x)
-    graph.value_formatter = percent_formatter
 
     for year in range(2000, 2017):
         print(">> Year : %i" % year)

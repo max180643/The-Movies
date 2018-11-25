@@ -1,3 +1,6 @@
+"""
+The-Movies : Rated_of_Movies_Bar
+"""
 import pandas as pd
 import pygal
 import time
