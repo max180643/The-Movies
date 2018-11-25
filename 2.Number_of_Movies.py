@@ -6,7 +6,7 @@ import pygal
 import time
 start_time = time.time()
 
-#banner
+# banner
 print("|>>> Number of Movies in 2000 - 2016 Dataset <<<|")
 
 def treemap_graph():
