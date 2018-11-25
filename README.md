@@ -1,6 +1,6 @@
 # The - Movies
-This Project is a part of "Problem Solving in Information Technology (PSIT)" subject.
 ### Author : The - Dev
+This Project is a part of "Problem Solving in Information Technology (PSIT)" subject.
 ### Detail
     - Coming soon
 ### Requirement
@@ -11,11 +11,11 @@ This Project is a part of "Problem Solving in Information Technology (PSIT)" sub
 ถ้าเจอปัญหารันไฟล์ Python แล้วขึ้น Error : FileNotFoundError
 #### ตัวอย่าง
  - Linux / Mac
- ให้แก้ไขโค้ดของไฟล์ .py จาก Path ของ Windows เป็นของ Linux / Mac
- เช่น "C:/The-Movies/Data_Export/%i.csv" เป็น "Data_Export/%i.csv"
+ให้แก้ไขโค้ดของไฟล์ .py จาก Path ของ Windows เป็นของ Linux / Mac
+เช่น "C:/The-Movies/Data_Export/%i.csv" เป็น "Data_Export/%i.csv"
  - Windows
- ให้แก้ไขโค้ดของไฟล์ .py จาก Path ของ Linux / Mac เป็นของ Windows
- เช่น "Data_Export/%i.csv" เป็น "C:/The-Movies/Data_Export/%i.csv"
+ให้แก้ไขโค้ดของไฟล์ .py จาก Path ของ Linux / Mac เป็นของ Windows
+เช่น "Data_Export/%i.csv" เป็น "C:/The-Movies/Data_Export/%i.csv"
 _____
 # Team Member
 |<img src="README/max180643.jpeg" width="150px" height="150px">|<img src="README/napatkrub.jpeg" width="150px" height="150px">|<img src="README/rapeeza1598.jpeg" width="150px" height="150px">|<img src="README/snowneymotex.jpeg" width="150px" height="150px">|
