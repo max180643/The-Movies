@@ -3,28 +3,31 @@ import pygal
 import time
 start_time = time.time()
 
-#banner
-print("[Total Rates of Movies in year Dataset]")
+#Banner
+print("|>>>Total Rates of Movies in year 2000-2016 Dataset<<<|")
 
-def rate_movies(year):
-    """ Create treemap_graph of total of movies in year and Load Dataset title and rate"""
+def rate_movies():
+    """ Create treemap_graph of total of movies in year 2000-2016 and Load Dataset title and rate"""
+    for year in range(2000, 2017):
+        print(">>In Year : %i" % year)
 
-    # start display
-    print("[status] Creat Graph Starting!")
+        # Start display
+        print(">>[status] Creat Graph Starting!")
 
-    dataset = pd.read_csv("D:/GitHub/The-Movies/Data_Export/%i.csv" % year)
-    title = dataset["title"].tolist() #Title Movies
-    rate = dataset["rate"].tolist() #Rate
-    graph = pygal.Treemap(x_title="Movie", y_title="Rate")
-    graph.title = "Total Rates of Movies in %i Dataset" % year
-    for i in range(len(title)):
-        graph.add(title[i], rate[i])
-    graph.render_to_file("D:/GitHub/The-Movies/Graph_Export/Rates_Year/Treemap/Total_Rates_of_Movies_%i.svg" % year)
+        dataset = pd.read_csv("D:/GitHub/The-Movies/Data_Export/%i.csv" % year)
+        title = dataset["title"].tolist() #Title Movies
+        rate = dataset["rate"].tolist() #Rate
+        graph = pygal.Treemap(x_title="Movie", y_title="Rate")
+        graph.title = "Total Rates of Movies in %i Dataset" % year
+        for i in range(len(title)):
+            graph.add(title[i], rate[i])
+        graph.render_to_file("D:/GitHub/The-Movies/Graph_Export/Rates_Year/Treemap/Total_Rates_of_Movies_%i.svg" % year)
 
-    # end display
-    print("[status] Created Graph Successful!")
+        # End display
+        print(">>[status] Created Graph Successful!")
+        print()
 
     # Used time
-    print("[status] Used time : %s seconds" % (time.time() - start_time))
+    print("Completed : [status] Used time : %s seconds" % (time.time() - start_time))
 
-rate_movies(int(input("Input Year : ")))
+rate_movies()
