@@ -10,10 +10,10 @@ This Project is a part of "Problem Solving in Information Technology (PSIT)" sub
 ### Have Error ?
 ถ้าเจอปัญหารันไฟล์ Python แล้วขึ้น Error : FileNotFoundError
 #### ตัวอย่าง
- - Linux / Mac
+##### Linux / Mac
 ให้แก้ไขโค้ดของไฟล์ .py จาก Path ของ Windows เป็นของ Linux / Mac
 เช่น "C:/The-Movies/Data_Export/%i.csv" เป็น "Data_Export/%i.csv"
- - Windows
+##### Windows
 ให้แก้ไขโค้ดของไฟล์ .py จาก Path ของ Linux / Mac เป็นของ Windows
 เช่น "Data_Export/%i.csv" เป็น "C:/The-Movies/Data_Export/%i.csv"
 _____
