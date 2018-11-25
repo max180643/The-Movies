@@ -4,15 +4,15 @@ import time
 start_time = time.time()
 
 #Banner
-print("|>>>Total Rates of Movies in year 2000-2016 Dataset<<<|")
+print("|>>> Total Rates of Movies in year 2000-2016 Dataset <<<|")
 
 def rate_movies():
     """ Create treemap_graph of total of movies in year 2000-2016 and Load Dataset title and rate"""
     for year in range(2000, 2017):
-        print(">>In Year : %i" % year)
+        print(">> Year : %i" % year)
 
         # Start display
-        print(">>[status] Create Graph Starting!")
+        print(">> [status] Create Graph Starting!")
 
         dataset = pd.read_csv("Data_Export/%i.csv" % (year))
         title = dataset["title"].tolist() #Title Movies
@@ -24,10 +24,10 @@ def rate_movies():
         graph.render_to_file("Graph_Export/Rates_Year/Treemap/Total_Rates_of_Movies_%i.svg" % year)
 
         # End display
-        print(">>[status] Created Graph Successful!")
+        print(">> [status] Created Graph Successful!")
         print()
 
     # Used time
-    print("Completed : [status] Used time : %s seconds" % (time.time() - start_time))
+    print(">> [status] Completed : Used time = %s seconds" % (time.time() - start_time))
 
 rate_movies()

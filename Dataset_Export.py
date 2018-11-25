@@ -5,12 +5,12 @@ import time
 start_time = time.time()
 
 #banner
-print("[Dataset Export v2.0]")
+print("|>>> Dataset Export v2.0 <<<|")
 
 def data_load():
     """ Load Dataset """
     # start display
-    print("[status] Export Dataset Starting!")
+    print(">> [status] Export Dataset Starting!")
 
     # load dataset
     dataset = pd.read_csv("Dataset/tmdb_5000_movies.csv")
@@ -40,10 +40,10 @@ def data_load():
         export_file(data[data_name], k)
 
     # end display
-    print("[status] Exported Dataset Successful!")
+    print(">> [status] Exported Dataset Successful!")
 
     # Used time
-    print("[status] Used time : %s seconds" % (time.time() - start_time))
+    print(">> [status] Completed : Used time = %s seconds" % (time.time() - start_time))
 
 def export_file(data, year):
     """ Export CSV File Sort By Year """
