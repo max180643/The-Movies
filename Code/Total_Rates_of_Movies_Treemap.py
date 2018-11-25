@@ -12,7 +12,7 @@ def rate_movies():
         print(">>In Year : %i" % year)
 
         # Start display
-        print(">>[status] Creat Graph Starting!")
+        print(">>[status] Create Graph Starting!")
 
         dataset = pd.read_csv("D:/GitHub/The-Movies/Data_Export/%i.csv" % year)
         title = dataset["title"].tolist() #Title Movies
