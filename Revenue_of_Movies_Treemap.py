@@ -25,7 +25,7 @@ def rate_movies():
         for i in range(len(title)):
             if revenue[i] != 0:
                 graph.add(title[i], revenue[i])
-        graph.render_to_file("Graph_Export/Revenue_Movies/Revenue_of_Movies_%i.svg" % year)
+        graph.render_to_file("Graph_Export/Revenue_Movies/Treemap/Revenue_of_Movies_%i.svg" % year)
 
         # End display
         print(">> [status] Created Graph Successful!")
