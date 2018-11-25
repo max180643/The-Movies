@@ -24,8 +24,12 @@ def average_rates():
 
         dataset = pd.read_csv("Data_Export/%i.csv" % (year))
         revenue = dataset["revenue"].tolist() #Revenue
-        average = ((((sum(revenue)/len(revenue)))/1000000//0.01)/100)
-        graph.add(str(year), [{'value': average, 'max_value': 150}])
+        temp = []
+        for i in revenue:
+            if i != 0:
+                temp.append(i)
+        average = ((((sum(temp)/len(temp)))/1000000//0.01)/100)
+        graph.add(str(year), [{'value': average, 'max_value': 200}])
 
         # End display
         print(">> [status] Created Graph Successful!")
