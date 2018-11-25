@@ -22,20 +22,20 @@ def average_rates():
         # Start display
         print(">> [status] Create Graph Starting!")
 
-        dataset = pd.read_csv("Data_Export/%i.csv" % (year))
+        dataset = pd.read_csv("Top-100_Export/Top-100_%i.csv" % (year))
         revenue = dataset["revenue"].tolist() #Revenue
         temp = []
         for i in revenue:
             if i != 0:
                 temp.append(i)
         average = ((((sum(temp)/len(temp)))/1000000//0.01)/100)
-        graph.add(str(year), [{'value': average, 'max_value': 200}])
+        graph.add(str(year), [{'value': average, 'max_value': 250}])
 
         # End display
         print(">> [status] Created Graph Successful!")
         print()
 
-    graph.render_to_file("Graph_Export/Revenue_Movies/Average/Average_Revenue_of_Movies.svg")
+    graph.render_to_file("Graph_Export/Average_Revenue_of_Movies.svg")
 
     # Used time
     print(">> [status] Completed : Used time = %s seconds" % (time.time() - start_time))

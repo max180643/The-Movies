@@ -20,7 +20,7 @@ def average_rates():
         # Start display
         print(">> [status] Create Graph Starting!")
 
-        dataset = pd.read_csv("Data_Export/%i.csv" % (year))
+        dataset = pd.read_csv("Top-100_Export/Top-100_%i.csv" % (year))
         rate = dataset["rate"].tolist() #Rate
         average = ((sum(rate)/len(rate))//0.01)/100
         graph.add(str(year), [{'value': average, 'max_value': 10}])
@@ -29,7 +29,7 @@ def average_rates():
         print(">> [status] Created Graph Successful!")
         print()
 
-    graph.render_to_file("Graph_Export/Rated_Movies/Average/Average_Rated_of_Movies.svg")
+    graph.render_to_file("Graph_Export/Average_Rated_of_Movies.svg")
 
     # Used time
     print(">> [status] Completed : Used time = %s seconds" % (time.time() - start_time))
