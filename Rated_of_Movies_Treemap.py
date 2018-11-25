@@ -17,11 +17,11 @@ def rate_movies():
         dataset = pd.read_csv("Data_Export/%i.csv" % (year))
         title = dataset["title"].tolist() #Title Movies
         rate = dataset["rate"].tolist() #Rate
-        graph = pygal.Treemap(x_title="Movie", y_title="Rate")
-        graph.title = "Total Rates of Movies in %i Dataset" % year
+        graph = pygal.Treemap(x_title="Movie Name & Rated")
+        graph.title = "Rated of Movies in year %i Dataset" % year
         for i in range(len(title)):
             graph.add(title[i], rate[i])
-        graph.render_to_file("Graph_Export/Rates_Year/Treemap/Total_Rates_of_Movies_%i.svg" % year)
+        graph.render_to_file("Graph_Export/Rated_Movies/Treemap/Rated_of_Movies_%i.svg" % year)
 
         # End display
         print(">> [status] Created Graph Successful!")
