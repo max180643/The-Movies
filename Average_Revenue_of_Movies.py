@@ -12,9 +12,9 @@ print("|>>> Average Revenue of Movies in year 2000-2016 Dataset <<<|")
 def average_rates():
     """ Create Revenue of Movies average_graph of movies in year 2000-2016 and Load Dataset revenue"""
     graph = pygal.SolidGauge(inner_radius=0.70)
-    baht_formatter = lambda x: '{:.10g}‎M฿'.format(x)
-    graph.value_formatter = baht_formatter
-    graph.title = "Average Revenue of Movies in year 2000-2016"
+    usd_formatter = lambda x: '{:.10g}‎M$'.format(x)
+    graph.value_formatter = usd_formatter
+    graph.title = "Average Revenue of Movies per year"
 
     for year in range(2000, 2017):
         print(">> Year : %i" % year)
@@ -25,7 +25,7 @@ def average_rates():
         dataset = pd.read_csv("Data_Export/%i.csv" % (year))
         revenue = dataset["revenue"].tolist() #Revenue
         average = ((((sum(revenue)/len(revenue)))/1000000//0.01)/100)
-        graph.add(str(year), [{'value': average, 'max_value': 200}])
+        graph.add(str(year), [{'value': average, 'max_value': 150}])
 
         # End display
         print(">> [status] Created Graph Successful!")

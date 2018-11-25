@@ -12,7 +12,7 @@ print("|>>> Average Rated of Movies in year 2000-2016 Dataset <<<|")
 def average_rates():
     """ Create Rated of Movies average_graph of movies in year 2000-2016 and Load Dataset rate"""
     graph = pygal.SolidGauge(inner_radius=0.70)
-    graph.title = "Average Rated of Movies in year 2000-2016"
+    graph.title = "Average Rated of Movies per year"
 
     for year in range(2000, 2017):
         print(">> Year : %i" % year)

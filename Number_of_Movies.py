@@ -15,7 +15,7 @@ def treemap_graph():
     print(">> [status] Creat Graph Starting!")
 
     graph = pygal.Bar(x_title="Year", y_title="Total", legend_at_bottom=True, print_values=True)
-    graph.title = "Number of Movies by year"
+    graph.title = "Number of Movies per year"
     for i in range(2000, 2017):
         graph.add(str(i), dataload(i))
     graph.render_to_file("Graph_Export/Number_of_Movies.svg")
