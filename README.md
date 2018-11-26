@@ -9,12 +9,15 @@ This Project is a part of "Problem Solving in Information Technology (PSIT)" sub
     3. Pygal
 ### Have Error ?
 #### Error : FileNotFoundError
-##### - Linux / Mac
+##### - File does not exist
+##### >> Linux / Mac
 ให้แก้ไขโค้ดของไฟล์ .py จาก Path ของ Windows เป็นของ Linux / Mac
 เช่น "C:/The-Movies/Data_Export/%i.csv" เป็น "Data_Export/%i.csv"
-##### - Windows
+##### >> Windows
 ให้แก้ไขโค้ดของไฟล์ .py จาก Path ของ Linux / Mac เป็นของ Windows
 เช่น "Data_Export/%i.csv" เป็น "C:/The-Movies/Data_Export/%i.csv"
+##### - No such file or directory
+ให้ตรวจสอบดูว่า Folder นั้นมีอยู่หรือไม่? ถ้าไม่มีให้สร้าง Folder นั้นขึ้นมาใหม่
 _____
 # Team Member
 |<img src="README/max180643.jpeg" width="150px" height="150px">|<img src="README/napatkrub.jpeg" width="150px" height="150px">|<img src="README/rapeeza1598.jpeg" width="150px" height="150px">|<img src="README/snowneymotex.jpeg" width="150px" height="150px">|
