@@ -8,7 +8,7 @@ This Project is a part of "Problem Solving in Information Technology (PSIT)" sub
     2. Pandas
     3. Pygal
 ### Have Error ?
-Error : FileNotFoundError
+#### Error : FileNotFoundError
 ##### - Linux / Mac
 ให้แก้ไขโค้ดของไฟล์ .py จาก Path ของ Windows เป็นของ Linux / Mac
 เช่น "C:/The-Movies/Data_Export/%i.csv" เป็น "Data_Export/%i.csv"
