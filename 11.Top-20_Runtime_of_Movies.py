@@ -21,7 +21,8 @@ def runtime_movies():
         runtime = dataset["runtime"].tolist() #Runtime
         data = []
         for j in range(len(title)):
-            data.append([title[j], runtime[j]])
+            if runtime[j] > 0:
+                data.append([title[j], runtime[j]])
         data.sort(key=lambda x: x[1], reverse=True)
         graph = pygal.Bar(x_title="Movie Name & Runtime")
         graph.value_formatter = lambda x: '{:.10g}‎Min'.format(x)
