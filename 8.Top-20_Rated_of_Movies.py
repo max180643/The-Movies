@@ -27,7 +27,6 @@ def rate_movies():
 
         # End display
         print(">> [status] Created Graph Successful!")
-        print()
 
     # Used time
     print(">> [status] Completed : Used time = %s seconds" % (time.time() - start_time))
