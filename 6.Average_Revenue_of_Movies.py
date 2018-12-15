@@ -9,7 +9,7 @@ start_time = time.time()
 #Banner
 print("|>>> Average Revenue of Movies in year 2000-2016 Dataset <<<|")
 
-def average_rates():
+def average_revenue():
     """ Create Revenue of Movies average_graph of movies in year 2000-2016 and Load Dataset revenue"""
     graph = pygal.SolidGauge(inner_radius=0.70)
     usd_formatter = lambda x: '{:.10g}‎M$'.format(x)
@@ -40,4 +40,4 @@ def average_rates():
     # Used time
     print(">> [status] Completed : Used time = %s seconds" % (time.time() - start_time))
 
-average_rates()
+average_revenue()
