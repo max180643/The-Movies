@@ -9,7 +9,7 @@ start_time = time.time()
 #Banner
 print("|>>> Average Runtime of Movies in year 2000-2016 Dataset <<<|")
 
-def average_rates():
+def average_runtime():
     """ Create Runtime of Movies average_graph of movies in year 2000-2016 and Load Dataset rate"""
     graph = pygal.SolidGauge(inner_radius=0.70)
     graph.value_formatter = lambda x: '{:.10g}‎Min'.format(x)
@@ -32,11 +32,10 @@ def average_rates():
 
         # End display
         print(">> [status] Created Graph Successful!")
-        print()
 
     graph.render_to_file("Graph_Export/Average_Runtime_of_Movies.svg")
 
     # Used time
     print(">> [status] Completed : Used time = %s seconds" % (time.time() - start_time))
 
-average_rates()
+average_runtime()
