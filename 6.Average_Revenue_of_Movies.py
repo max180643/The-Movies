@@ -33,7 +33,6 @@ def average_revenue():
 
         # End display
         print(">> [status] Created Graph Successful!")
-        print()
 
     graph.render_to_file("Graph_Export/Average_Revenue_of_Movies.svg")
 
