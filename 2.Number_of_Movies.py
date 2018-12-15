@@ -9,7 +9,7 @@ start_time = time.time()
 # banner
 print("|>>> Number of Movies in 2000 - 2016 Dataset <<<|")
 
-def graph():
+def number_of_movies():
     """ Create graph of number of movies 2000 - 2016 """
     # start display
     print(">> [status] Creat Graph Starting!")
@@ -32,4 +32,4 @@ def dataload(year):
     total = len(dataset["title"].tolist())
     return total
 
-graph()
+number_of_movies()
