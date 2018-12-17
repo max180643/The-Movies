@@ -2,8 +2,8 @@
 
 ### Author : The - Dev
 โปรเจคนี้เป็นส่วนหนึ่งของวิชา Problem Solving in Information Technology (PSIT)
-
-<img src="http://tkdworldclass.com/wp-content/uploads/2018/02/movie-night.jpg" width="300px" height="300px">
+* **เว็บไซต์ :**
+* **Youtube :**
 
 ### วัตถุประสงค์
 ดึงข้อมูลจาก Dataset ของหนังเพื่อมาทำการวิเคราะห์ข้อมูลต่างๆ และ นำเสนอข้อมูลที่ทำการวิเคราะห์ เช่น เงินทุน, รายได้, ระยะเวลาของหนัง และ คะแนนของหนัง
