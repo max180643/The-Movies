@@ -23,7 +23,7 @@
    * ค่าเฉลี่ยแต่ละปีของคะแนนของหนัง
    ![rate](https://github.com/max180643/The-Movies/blob/master/Graph_Export/Average_Rated_of_Movies.svg)
    * ค่าเฉลี่ยรวมของทุกๆหัวข้อ
-   ![average](https://github.com/max180643/The-Movies/blob/master/Graph_Export/All_Average_of_Movies.svg)
+   ![average](aa)
 
 ### โปรแกรมที่ใช้ในการวิเคราะห์และแสดงผลข้อมูล
 ##### 1. Python3
