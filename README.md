@@ -1,16 +1,18 @@
 # The - Movies
+<img src="http://tkdworldclass.com/wp-content/uploads/2018/02/movie-night.jpg" width="300px" height="300px">
+
 ### Author : The - Dev
-    โปรเจคนี้เป็นส่วนหนึ่งของวิชา Problem Solving in Information Technology (PSIT)
+โปรเจคนี้เป็นส่วนหนึ่งของวิชา Problem Solving in Information Technology (PSIT)
 ### วัตถุประสงค์
-    .....
+.....
 ### ผลการดำเนินงาน
-    .....
+.....
 ### โปรแกรมที่ใช้ในการวิเคราะห์และแสดงผลข้อมูล
-    1. Python3
-    2. Pandas Module
-    3. Pygal Module
+##### 1. Python3
+##### 2. Pandas Module
+##### 3. Pygal Module
 ### แหล่งข้อมูลที่นำมาวิเคราะห์
-    ข้อมูลจากเว็บ : [TMDB 5000 Movie Dataset](https://www.kaggle.com/tmdb/tmdb-movie-metadata)
+ข้อมูลจากเว็บ : [TMDB 5000 Movie Dataset](https://www.kaggle.com/tmdb/tmdb-movie-metadata)
 _____
 # Team Member
 |<img src="README/max180643.jpeg" width="150px" height="150px">|<img src="README/napatkrub.jpeg" width="150px" height="150px">|<img src="README/rapeeza1598.jpeg" width="150px" height="150px">|<img src="README/snowneymotex.jpeg" width="150px" height="150px">|
