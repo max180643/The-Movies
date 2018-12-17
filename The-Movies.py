@@ -409,7 +409,7 @@ def all_average():
                 if i != 0:
                     temp.append(i)
             average = ((((sum(temp)/len(temp)))/1000000//0.01)/100)
-        graph.add(mode, [{'value': average, 'max_value': select_mode[mode]}])
+        graph.add(mode.title(), [{'value': average, 'max_value': select_mode[mode]}])
         all_rate = []
     # End display
     print(">> [status] Created Graph Successful!")
