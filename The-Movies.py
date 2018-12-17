@@ -384,6 +384,8 @@ def runtime_movies():
 def all_average():
     """ Create All Average of Movies average_graph of movies in year 2000-2016 and Load Dataset rate"""
     graph = pygal.SolidGauge(inner_radius=0.70)
+    time_formatter = lambda x: '{:.10g}‎Min'.format(x)
+    usd_formatter = lambda x: '{:.10g}‎M$'.format(x)
     graph.title = "Average in year 2000-2016"
     # Start display
     print(">> [status] Create Graph Starting!")
@@ -392,28 +394,30 @@ def all_average():
     for mode in select_mode:
         for year in range(2000, 2017):
             print(mode, ">> Year : %i" % year)
-            dataset = pd.read_csv("D:/GitHub/The-Movies/Top-100_Export/Top-100_%i.csv" % (year))
+            dataset = pd.read_csv("Top-100_Export/Top-100_%i.csv" % (year))
             rate = dataset[mode].tolist() #Rate
             all_rate.extend(rate)
         if mode == 'rate':
             average = ((sum(all_rate)/len(all_rate))//0.01)/100
+            graph.add(mode.title(), [{'value': average, 'max_value': select_mode[mode]}])
         elif mode == 'runtime':
             temp = []
             for i in all_rate:
                 if i > 0:
                     temp.append(i)
             average = ((sum(temp)/len(temp))//0.01)/100
+            graph.add(mode.title(), [{'value': average, 'max_value': select_mode[mode]}], formatter=time_formatter)
         else:
             temp = []
             for i in all_rate:
                 if i != 0:
                     temp.append(i)
             average = ((((sum(temp)/len(temp)))/1000000//0.01)/100)
-        graph.add(mode.title(), [{'value': average, 'max_value': select_mode[mode]}])
+            graph.add(mode.title(), [{'value': average, 'max_value': select_mode[mode]}], formatter=usd_formatter)
         all_rate = []
     # End display
     print(">> [status] Created Graph Successful!")
-    graph.render_to_file("D:/GitHub/The-Movies/Graph_Export/All_Average_of_Movies.svg")
+    graph.render_to_file("Graph_Export/All_Average_of_Movies.svg")
     # Used time
     print(">> [status] Completed : Used time = %s seconds" % (time.time() - start_time))
 
