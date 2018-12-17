@@ -22,6 +22,7 @@ def the_movies():
     print("|>>> 9.Top-20_Budget_of_Movies")
     print("|>>> 10.Top-20_Revenue_of_Movies")
     print("|>>> 11.Top-20_Runtime_of_Movies")
+    print("|>>> 12.All_Average_of_Movies")
     select_number = int(input("Select_number : "))
 
     # Select Number 1-11
@@ -69,6 +70,9 @@ def the_movies():
         # Top-20_Runtime_of_Movies
         print("|>>> Top-20 Runtime of Movies in 2000 - 2016 Dataset <<<|")
         runtime_movies()
+    elif select_number == 12:
+        print("|>>> All Average of Movies in year 2000-2016 Dataset <<<|")
+        all_average()
 
 
 #--Select_number 1---------------------------------------------------------------------------------------------------|
@@ -372,6 +376,44 @@ def runtime_movies():
         graph.render_to_file("Graph_Export/Top-20_Runtime/Top-20_Runtime_%i.svg" % year)
         # End display
         print(">> [status] Created Graph Successful!")
+    # Used time
+    print(">> [status] Completed : Used time = %s seconds" % (time.time() - start_time))
+
+#--Select_number 12---------------------------------------------------------------------------------------------------|
+
+def all_average():
+    """ Create All Average of Movies average_graph of movies in year 2000-2016 and Load Dataset rate"""
+    graph = pygal.SolidGauge(inner_radius=0.70)
+    graph.title = "Average in year 2000-2016"
+    # Start display
+    print(">> [status] Create Graph Starting!")
+    select_mode = {'rate': 10, 'budget': 100, 'revenue': 200, 'runtime': 200}
+    all_rate = []
+    for mode in select_mode:
+        for year in range(2000, 2017):
+            print(mode, ">> Year : %i" % year)
+            dataset = pd.read_csv("D:/GitHub/The-Movies/Top-100_Export/Top-100_%i.csv" % (year))
+            rate = dataset[mode].tolist() #Rate
+            all_rate.extend(rate)
+        if mode == 'rate':
+            average = ((sum(all_rate)/len(all_rate))//0.01)/100
+        elif mode == 'runtime':
+            temp = []
+            for i in all_rate:
+                if i > 0:
+                    temp.append(i)
+            average = ((sum(temp)/len(temp))//0.01)/100
+        else:
+            temp = []
+            for i in all_rate:
+                if i != 0:
+                    temp.append(i)
+            average = ((((sum(temp)/len(temp)))/1000000//0.01)/100)
+        graph.add(mode, [{'value': average, 'max_value': select_mode[mode]}])
+        all_rate = []
+    # End display
+    print(">> [status] Created Graph Successful!")
+    graph.render_to_file("D:/GitHub/The-Movies/Graph_Export/All_Average_of_Movies.svg")
     # Used time
     print(">> [status] Completed : Used time = %s seconds" % (time.time() - start_time))
 
