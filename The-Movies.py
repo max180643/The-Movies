@@ -25,7 +25,7 @@ def the_movies():
     print("|>>> 12.All_Average_of_Movies")
     select_number = int(input("Select_number : "))
 
-    # Select Number 1-11
+    # Select Number 1-12
     if select_number == 1:
         # Read Dataset and Create CSV File
         print("|>>> Dataset Export v2.0 <<<|")
@@ -71,6 +71,7 @@ def the_movies():
         print("|>>> Top-20 Runtime of Movies in 2000 - 2016 Dataset <<<|")
         runtime_movies()
     elif select_number == 12:
+        # All Average of Movies in year 2000 - 2016
         print("|>>> All Average of Movies in year 2000-2016 Dataset <<<|")
         all_average()
 
@@ -192,7 +193,7 @@ def average_rates():
         print(">> Year : %i" % year)
         # Start display
         print(">> [status] Create Graph Starting!")
-        dataset = pd.read_csv("Top-100_Export/Top-100_%i.csv" % (year))
+        dataset = pd.read_csv("Top-100_Export/Top-100_%i.csv" % year)
         rate = dataset["rate"].tolist() #Rate
         average = ((sum(rate)/len(rate))//0.01)/100
         graph.add(str(year), [{'value': average, 'max_value': 10}])
@@ -214,7 +215,7 @@ def average_budget():
         print(">> Year : %i" % year)
         # Start display
         print(">> [status] Create Graph Starting!")
-        dataset = pd.read_csv("Top-100_Export/Top-100_%i.csv" % (year))
+        dataset = pd.read_csv("Top-100_Export/Top-100_%i.csv" % year)
         budget = dataset["budget"].tolist() #budget
         temp = []
         for i in budget:
@@ -240,7 +241,7 @@ def average_revenue():
         print(">> Year : %i" % year)
         # Start display
         print(">> [status] Create Graph Starting!")
-        dataset = pd.read_csv("Top-100_Export/Top-100_%i.csv" % (year))
+        dataset = pd.read_csv("Top-100_Export/Top-100_%i.csv" % year)
         revenue = dataset["revenue"].tolist() #Revenue
         temp = []
         for i in revenue:
@@ -265,7 +266,7 @@ def average_runtime():
         print(">> Year : %i" % year)
         # Start display
         print(">> [status] Create Graph Starting!")
-        dataset = pd.read_csv("Top-100_Export/Top-100_%i.csv" % (year))
+        dataset = pd.read_csv("Top-100_Export/Top-100_%i.csv" % year)
         runtime = dataset["runtime"].tolist() #Runtime
         temp = []
         for i in runtime:
@@ -287,7 +288,7 @@ def rate_movies():
         # Start display
         print(">> Year : %i" % year)
         print(">> [status] Create Graph Starting!")
-        dataset = pd.read_csv("Top-100_Export/Top-100_%i.csv" % (year))
+        dataset = pd.read_csv("Top-100_Export/Top-100_%i.csv" % year)
         title = dataset["title"].tolist() #Title Movies
         rate = dataset["rate"].tolist() #Rate
         graph = pygal.Bar(x_title="Movie Name & Rated")
@@ -308,7 +309,7 @@ def budget_movies():
         # Start display
         print(">> Year : %i" % year)
         print(">> [status] Create Graph Starting!")
-        dataset = pd.read_csv("Top-100_Export/Top-100_%i.csv" % (year))
+        dataset = pd.read_csv("Top-100_Export/Top-100_%i.csv" % year)
         title = dataset["title"].tolist() #Title Movies
         budget = dataset["budget"].tolist() #Budget
         data = []
@@ -334,7 +335,7 @@ def revenue_movies():
         # Start display
         print(">> Year : %i" % year)
         print(">> [status] Create Graph Starting!")
-        dataset = pd.read_csv("Top-100_Export/Top-100_%i.csv" % (year))
+        dataset = pd.read_csv("Top-100_Export/Top-100_%i.csv" % year)
         title = dataset["title"].tolist() #Title Movies
         revenue = dataset["revenue"].tolist() #Revenue
         data = []
@@ -360,7 +361,7 @@ def runtime_movies():
         # Start display
         print(">> Year : %i" % year)
         print(">> [status] Create Graph Starting!")
-        dataset = pd.read_csv("Top-100_Export/Top-100_%i.csv" % (year))
+        dataset = pd.read_csv("Top-100_Export/Top-100_%i.csv" % year)
         title = dataset["title"].tolist() #Title Movies
         runtime = dataset["runtime"].tolist() #Runtime
         data = []
@@ -394,7 +395,7 @@ def all_average():
     for mode in select_mode:
         for year in range(2000, 2017):
             print(mode, ">> Year : %i" % year)
-            dataset = pd.read_csv("Top-100_Export/Top-100_%i.csv" % (year))
+            dataset = pd.read_csv("Top-100_Export/Top-100_%i.csv" % year)
             rate = dataset[mode].tolist() #Rate
             all_rate.extend(rate)
         if mode == 'rate':
