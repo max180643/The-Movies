@@ -14,7 +14,7 @@
    * ค่าเฉลี่ยแต่ละปีของรายได้ที่ได้
    ![revenue](https://github.com/max180643/The-Movies/blob/master/Graph_Export/Average_Revenue_of_Movies.svg)
    * ค่าเฉลี่ยแต่ละปีของระยะเวลาของหนัง
-   ![runtime]()
+   ![runtime](https://github.com/max180643/The-Movies/blob/master/Graph_Export/Average_Runtime_of_Movies.svg)
    * ค่าเฉลี่ยแต่ละปีของคะแนนของหนัง
    ![rate](https://github.com/max180643/The-Movies/blob/master/Graph_Export/Average_Rated_of_Movies.svg)
    * ค่าเฉลี่ยรวมของทุกๆหัวข้อ
