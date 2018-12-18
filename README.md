@@ -2,7 +2,7 @@
 
 ### Author : The - Dev
 โปรเจคนี้เป็นส่วนหนึ่งของวิชา Problem Solving in Information Technology (PSIT)
-* **เว็บไซต์ :**
+* **เว็บไซต์ :** [https://max180643.github.io/The-Movies/](https://max180643.github.io/The-Movies/)
 * **Youtube :**
 
 ### วัตถุประสงค์
