@@ -3,7 +3,7 @@
 ### Author : The - Dev
 โปรเจคนี้เป็นส่วนหนึ่งของวิชา Problem Solving in Information Technology (PSIT)
 * **เว็บไซต์ :** [https://max180643.github.io/The-Movies/](https://max180643.github.io/The-Movies/)
-* **Youtube :**
+* **Youtube :** [https://youtu.be/_0Z7Z0Oki3w](https://youtu.be/_0Z7Z0Oki3w)
 
 ### วัตถุประสงค์
 ดึงข้อมูลจาก Dataset ของหนังเพื่อมาทำการวิเคราะห์ข้อมูลต่างๆ และ นำเสนอข้อมูลที่ทำการวิเคราะห์ เช่น เงินทุน, รายได้, ระยะเวลาของหนัง และ คะแนนของหนัง
